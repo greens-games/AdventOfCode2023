@@ -6,7 +6,7 @@ fn main() {
     for val in input {
         let digits = find_digits(val);
         let digit0_str = digits.0.to_string();
-        let digit1_str = digits.1.to_string().to_owned();
+        let digit1_str = digits.1.to_string();
         let digits_str = format!("{digit0_str}{digit1_str}");
         sum += digits_str.parse::<i32>().unwrap();
     }
